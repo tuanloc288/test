@@ -6,6 +6,7 @@ import { accountRoutes } from "./accountRoutes.js";
 import { billRoutes } from "./billRoutes.js";
 import { cartDetailRoutes } from './cartDetailRoutes.js'
 import { discountOnCategoryRoutes } from "./discountOnCategoryRoutes.js";
+import { privilegedRoutes } from "./privilegedRoutes.js";
 
 const index = express()
 
@@ -18,6 +19,7 @@ index.use("/cart", cartRoutes);
 index.use("/account", accountRoutes);
 index.use("/bill", billRoutes);
 index.use("/cartDetail", cartDetailRoutes);
+index.use("/privileged", privilegedRoutes);
 index.use("/discountOnCategory", discountOnCategoryRoutes)
 
 export const allRoutes = index
